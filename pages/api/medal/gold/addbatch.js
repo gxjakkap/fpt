@@ -1,6 +1,6 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 
-import db from '../../../utils/db/main'
+import db from '../../../../utils/db/main'
 import { v4 as uuidv4 } from 'uuid'
 
 export default async function handler(req, res) {
