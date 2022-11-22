@@ -18,12 +18,9 @@ export default async function handler(req, res) {
     let c = 0
 
     body.forEach(i => {
-        const slug = uuidv4()
         const date = new Date()
-        let x = i
-        x.id = slug
-        x.date = date.getTime() + c
-        a.push(x)
+        let obj = {name: i, type: i.split(" ")[0], id: uuidv4(), date: date+c}
+        a.push(obj)
         c++
     })
 
